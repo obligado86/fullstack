@@ -5,8 +5,8 @@ const spanFullName = document.querySelector("#span-full-name");
 const txtLastName = document.querySelector("#txt-last-name");
 
 
-txtFirstName.addEventListener("keyup", printfullName)
-txtLastName.addEventListener("keyup", printfullName)
+txtFirstName.addEventListener("keyup", printFullName)
+txtLastName.addEventListener("keyup", printFullName)
 function printFullName(event){
 	spanFullName.innerHTML = (txtFirstName.value + " " + txtLastName.value)
 };
