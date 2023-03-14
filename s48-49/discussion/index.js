@@ -42,7 +42,7 @@ const showPosts = (posts) => {
 
 fetch("https://jsonplaceholder.typicode.com/posts/50")
 	.then(response => response.json())
-	.then(data => showPosts(data));
+	.then(data => console.log(data));
 
 document.querySelector("#form-add-post").addEventListener("submit", e => {
 	e.preventDefault();
@@ -103,3 +103,10 @@ document.querySelector("#form-edit-post").addEventListener("submit", e => {
 
 		document.querySelector("#btn-submit-update").setAttribute("disabled", true);
 });
+
+// delete post
+
+const deletePost = (id) => {
+	let title = document.querySelector(`#post-title-${id}`).innerHTML;
+	let body = document.querySelector(`#post-body-${id}`).innerHTML;
+}
